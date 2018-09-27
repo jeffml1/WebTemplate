@@ -1,0 +1,27 @@
+/* CSS Document */
+.product{height:150px; padding:15px 0; background:#fff; margin:0; border-bottom:1px dotted #ddd;}
+.product img {float:left}
+.product .pricing {float:left; margin:0 5px; width:110px; height:150px; font-size:11px; overflow:hidden}
+.product .pricing .special {color:#cc0000; font-weight:bold}
+.product h4 {margin:0 0 5px; font-size:14px}
+.product.inactive {border:1px dotted #F00; padding:4px; background:url(../../images/inactive.png) center no-repeat #FFFFCC; color:#999999}
+
+.discount {padding:5px; background:#fff; margin:1em 0; line-height:20px;}
+.discount h4 {margin:0 0 5px; font-size:14px}
+.discount em {font-size:10px; font-style:normal; color:#666}
+.discount strong {display:block; text-align:right; float:left; width:200px; margin-right:5px;}
+
+ul.disclist, ul.disclist ul {list-style:none; padding-left:20px}
+.disclist li {background:url(/assets/images/cat.gif) no-repeat top left; padding:0 0 0 16px; margin:0;}
+.products li {background:url(/assets/images/product.png) no-repeat top left;}
+
+.cart {width:600px}
+.cart td, .cart th {padding:2px}
+
+table.shipping input {width:60px}
+table.orders td {vertical-align:middle}
+
+.shopimage {border:2px solid #b8062a; display:block}
+
+#shopContents {clear:right; float:right; width:540px;}
+#addprodbutton {position:absolute; top:155px; left:50%; margin-left:300px; }

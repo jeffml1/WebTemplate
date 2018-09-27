@@ -1,0 +1,65 @@
+.rangeslider,
+.rangeslider__fill {
+	display: block;
+
+}
+
+.rangeslider {
+	background: #e6e6e6;
+	position: relative;
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+
+.rangeslider--horizontal {
+	height: 10px;
+	width: 100%;
+}
+
+
+.rangeslider__fill {
+	background: #A7CD39;
+	position: absolute;
+}
+.rangeslider--horizontal .rangeslider__fill {
+	top: 0;
+	height: 100%;
+}
+
+.rangeslider__handle {
+	color: #23418E;
+	width: 2px;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+}
+.rangeslider__handle:before {
+	position: absolute;
+	content: "";
+	width: 30px;
+	height: 30px;
+	border-radius: 15px 15px 0 15px;
+	background: currentcolor;
+	transform: rotate(45deg);
+	left: 5px;
+	top: -25px;
+}
+.rangeslider__handle:after {
+	position: absolute;
+	background-color: currentcolor;
+	left: 19px;
+	right: 19px;
+	top: 20px;
+	bottom: 5px;
+}
+.rangeslider__handle:active {
+}
+.rangeslider--horizontal .rangeslider__handle {
+	top: -10px;
+	touch-action: pan-y;
+	-ms-touch-action: pan-y;
+}
+
+input[type="range"]:focus + .rangeslider .rangeslider__handle {
+	box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+}

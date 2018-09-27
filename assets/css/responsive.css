@@ -1,0 +1,396 @@
+@media (max-width: 1226px) {
+	#shopContents {
+		.product_category {
+			min-width: 355px;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.homeContent .infoBoxes ul {
+		display: block;
+		padding: 0;
+	}
+
+	.homeContent .infoBoxes ul li, .homeContent .infoBoxes .infoBoxBack {
+		min-height: 0;
+		height: 308px;
+	}
+
+	.homeContent .infoBoxes .pricingText, .homeContent .infoBoxes .businessText, .homeContent .infoBoxes .joinUsText {
+		padding-top: 50px;
+	}
+}
+
+@media only screen and (max-width : 960px) {
+
+
+	.header .nav-open-button {
+		display: block;
+		position: absolute;
+		top: 50%;
+		margin-top: -20px;
+		right: 10px;
+		width: 40px;
+		height: 40px;
+	}
+	.header .nav-open-button:after {
+		content: "";
+		position: absolute;
+		left: 17px;
+		height: 6px;
+		width: 6px;
+		top: 9px;
+		border-radius: 3px;
+		background: currentcolor;
+		box-shadow: 0 8px 0 currentcolor,
+					0 16px 0 currentcolor ;
+	}
+	.header .nav {
+		right: -300px;
+		background: #212d35;
+		background: #212d35 -moz-linear-gradient(left, rgba(0,0,0,0.22) 0%, rgba(0,0,0,0) 7%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+		background: #212d35 -webkit-linear-gradient(left, rgba(0,0,0,0.22) 0%,rgba(0,0,0,0) 7%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: #212d35 linear-gradient(to right, rgba(0,0,0,0.22) 0%,rgba(0,0,0,0) 7%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		width: 260px;
+		top: 0;
+		text-align: left;
+		position: fixed;
+		bottom: 0;
+		overflow: auto;
+		padding: 20px;
+		margin: 0;
+	}
+		.header .nav li {
+			display: block;
+			margin: 0;
+		}
+		.header .nav li a {
+			display: block;
+			text-align: left;
+			color: #fff;
+			padding: 10px 10px 5px 10px;
+		}
+
+		.header .nav li.join-us a {
+			text-align: center;
+			padding: 0;
+		}
+		.header .nav li li ul {
+			display: none !important;
+		}
+		.header .nav li ul {
+			display: block;
+			background: none;
+			position: relative;
+			border: 0;
+			width: auto;
+			top: 0;
+		}
+		.header .nav li ul li {
+			float: none;
+			height: 30px;
+		}
+		.header .nav li ul a {
+			padding-top: 0;
+			font-size: 18px;
+			margin-left: -1px;
+			padding-left: 15px;
+			line-height: 30px;
+			text-align: left;
+		}
+
+		.header .nav li.closer {
+			display: block;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			width: 40px;
+			height: 40px;
+		}
+		.header .nav li.closer a:before,
+		.header .nav li.closer a:after {
+			content: "";
+			width: 40px;
+			height: 4px;
+			background: currentcolor;
+			display: block;
+			position: absolute;
+			transform: rotate(45deg);
+			top: 18px;
+		}
+		.header .nav li.closer a:after {
+			transform: rotate(135deg);
+		}
+
+	body {
+		position: relative;
+		left: 0;
+	}
+	body, .header .nav {
+		transition: all 0.2s ease-in-out;
+	}
+
+	body.showmenu {
+		left: -300px;
+	}
+	body.showmenu .header .nav {
+		right: 0;
+	}
+
+	.header .nav {
+		width: 210px;
+	}
+
+	body.showmenu {
+		left: -250px;
+	}
+
+	.answer {
+		line-height: 1.25em;
+	}
+}
+
+
+@media screen and (max-width: 873px) {
+
+	.homeContent {
+		display: block;
+		width: 100%;
+
+		.leftTxt {
+			margin: 0 auto;
+			padding-left: 30px;
+		}
+	}
+
+	.subfooter #shopContents{
+		margin: 0 auto;
+		padding-left: 5px;
+	}
+
+	#middleImages {
+		display: none;
+	}
+
+	.contentContainer {
+		display: block;
+
+		.leftContent {
+			padding: 0;
+		}
+
+	}
+	#shopContents .product_category {
+		min-width: 287px;
+	}
+
+}
+
+
+@media only screen and (max-width : 768px) {
+	#menu-switcher {
+		display: block;
+	}
+
+	iframe {
+		max-width: 100%;
+	}
+
+	img {max-width:100%; height:auto }
+
+
+	#menu-switcher {
+		font-size: 50px;
+		position: absolute;
+		top:6px;
+		right:0;
+		color: #66AE45;
+		padding:20px;
+		background:#fff;
+	}
+
+}
+
+@media (max-width: 710px) {
+	#shopContents {
+		display: block;
+
+		.product_category {
+			margin: 0;
+		}
+	}
+
+	.paylessDifferent ul {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		display: block;
+
+		li {
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
+}
+
+
+@media (max-width: 626px) {
+	#middleImages {
+		padding-top: 50px;
+	}
+}
+
+@media (max-width: 550px) {
+	.header h1 {
+		font-size: 34px;
+	}
+
+	#insightTxt {
+		font-size: 37px;
+		margin: 0;
+		max-width: 280px;
+		line-height: 40px;
+	}
+
+	.main-content form label {
+		text-align: left;
+	}
+}
+
+
+@media (max-width: 507px) {
+
+	.footerMenu {text-align: center;}
+
+	.footerMenu > ul {
+		width: 310px;
+		margin-top: 34px;
+
+		.first.pricing {
+			float: none;
+			margin-top: -30px;
+		}
+	}
+
+	.contactDeets {
+		margin-top: 50px;
+	}
+}
+
+
+@media (max-width: 480px) {
+
+	.outageLinks tr {
+		display: block;
+		margin-bottom: 20px;
+
+		td {
+			display: block;
+		}
+	}
+
+	#termsTable {
+		tr td:nth-child(2) {
+			display: none;
+		}
+		tr td {
+			width: 50%;
+		}
+	}
+	.copyright, .footerMenu, .contactDeets {
+		padding: 0;
+		display: inline-block;
+		padding-bottom: 20px;
+		margin: 0 auto;
+	}
+
+	.copyright, .footerMenu {
+		padding-bottom: 50px;
+	}
+
+	.copyright #footerLogo {
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+	.copyright #line1, .copyright #line2 {
+		text-align: center;
+	}
+
+	.contactDeets {
+		width: 100%;
+	}
+
+	.contactDeets p, .contactDeets a {
+		text-align: center;
+	}
+
+	.yellowBarBottom {
+
+		table tr td {
+			font-size: 15px;
+			display: block;
+			max-height: 60px;
+		}
+
+
+		table tr td:last-child {
+			margin-bottom: 50px;
+		}
+	}
+
+	#facebookButton {
+		margin-top: 20px;
+	}
+
+	.questions {
+		margin-top: 50px;
+	}
+
+	.questions h2 {
+		font-size: 36px;
+		line-height: 2.5em;
+	}
+
+	.paylessDifferent .container ul #localService, .paylessDifferent .container ul #nzOwned {
+		margin-bottom: 50px;
+	}
+
+	#headerLogo {
+		margin-left: 0;
+	}
+
+	.homeContent .yellowBlurb .yellowBlurbText p {
+		font-size: 18px;
+		line-height: 1.25em;
+	}
+
+	.homeContent .yellowBlurb .yellowBlurbText p:first-child {
+		font-size: 26px;
+		line-height: 1.25em;
+	}
+
+	.paylessDifferent h2 {
+		font-size: 36px;
+		line-height: 1.25em;
+	}
+
+	.brands img {
+		padding-bottom: 20px;
+	}
+
+}
+
+@media (max-width: 420px) {
+	.header h1 {
+		font-size: 24px;
+	}
+
+	#insightTxt {
+		font-size: 27px;
+		margin: 0;
+		max-width: 200px;
+		line-height: 30px;
+	}
+
+}

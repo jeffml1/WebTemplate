@@ -1,0 +1,54 @@
+/* CSS Document */
+.adminnav {list-style:none; display:block; height:28px; background:#eae7ce url(/assets/images/grad.png); margin:0; padding:0; }
+.adminnav li {display:block; float:left; margin:0;}
+.adminnav li a {text-decoration: none; display:block; padding:6px; font-weight:normal; border-right:1px solid #999; border-left:1px solid #fff; height:16px;}
+
+
+
+.user fieldset{
+background:#fafafa;
+border:1px solid #000000;
+text-align:left;
+padding:10px;
+margin: 10px 0px;
+}
+
+.user fieldset legend{
+background:#ddd;
+padding:2px;
+font-weight:700;
+border: 1px solid #1a1a1a;
+}
+
+.user a{text-decoration: none}
+.user li{list-style: none; border-bottom: 1px solid #333; line-height: 30px}
+.user li ul li {border-bottom: none; border-top: 1px solid #333}
+.user img{margin: 0 5px 0 5px; border: none}
+
+.controls {float: right; text-align: left; width: 220px; margin-right: 50px; padding-top: 5px; line-height: 20px}
+.hidecancel{display:none}
+.deleted .controls{display:none;}
+.deleted .hidecancel {display:inline; margin-right:200px; float:right; }
+
+.infobox {background:#def; border:2px solid #006699; padding:5px; margin:10px; width:500px}
+.errorbox {background:#eee; border:2px solid #f00; padding:5px; margin:10px; width:500px}
+.error {background:#ffddbb}
+
+ul .leftarrow {display:none;}
+ul ul .leftarrow {display:inline;}
+
+.editbutton {position:absolute; top:5px; right:0; text-align:center; font-weight:bold; padding:6px 0; background:url(/assets/images/bt-blue.png); width:150px; height:16px; line-height:16px; color:#fff; z-index: 9999;}
+.editbutton:hover {color:#eee}
+
+.cancel{text-align:center; font-weight:bold; padding:0; background:url(/assets/images/bt-red.png); width:150px; height:28px; color:#fff; display:block; float:left; border:0; margin-right:10px; cursor:pointer}
+.cancel:hover {color:#eee}
+.confirm{text-align:center; font-weight:bold; padding:0; background:url(/assets/images/bt-green.png); width:150px; height:28px; color:#fff; display:block; border:0; cursor:pointer}
+.confirm:hover {color:#eee}
+
+a.action{text-align:center; font-weight:bold; padding:0; background:url(/assets/images/bt-blue.png); width:150px; height:28px; color:#fff; display:block; border:0; line-height:28px}
+a.action:hover {color:#eee}
+
+
+
+
+#pag_text_parent{margin:0 -10px; display:block}

@@ -1,0 +1,42 @@
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} ^ciigroup.nz$ [OR]
+RewriteCond %{HTTP_HOST} ^www.ciigroup.co.nz$ [OR]
+RewriteCond %{HTTP_HOST} ^www.ciigroup.nz$
+RewriteRule ^(.*)$ https://ciigroup.co.nz/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^ciigroup.co.nz$
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://ciigroup.co.nz/$1 [R=301,L]
+
+RewriteRule ^sitemap$ /sitemap.php [L]
+RewriteRule ^sitemap.xml$ /sitemapxml.php [L]
+
+RewriteRule ^_([a-z]+)$ /$1.php [L]
+RewriteRule ^_([a-z]+)/([a-z]+)$ /assets/plugins/$1/$2.php [L]
+RewriteRule ^_([a-z]+)/([0-9]+)-.*$ /assets/plugins/$1/index.php?num=$2 [L]
+RewriteRule ^(ajax)/([a-z]+)$ /$1/$2.php [L]
+RewriteRule ^(admin)$ /_admin [R=301,L]
+
+RewriteRule ^Home$ / [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([A-Za-z0-9\-/]+)$ /index.php?page=$1 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([A-Za-z0-9\-/]+)/([0-9]+)-.*$ /index.php?page=$1&id=$2 [L,QSA]
+
+#Image versioning
+RewriteRule ^(assets/images/)[0-9]+/(.+)$ nocache.php?f=$1$2 [L]
+RewriteRule ^(assets/fonts/.+)$ nocache.php?f=$1 [L]
+RewriteRule ^(assets/scripts/cache/[0-9]+\.js)$ nocache.php?f=$1 [L]
+RewriteRule ^(assets/css/cache/[0-9]+\.css)$ nocache.php?f=$1 [L]
+RewriteRule ^(upload/[0-9]+_.*)$ nocache.php?f=$1 [L]
+RewriteRule ^(upload/[0-9]+_.*)$ nocache.php?f=$1 [L]
+RewriteRule ^(favicon.ico)$ nocache.php?f=$1 [L]
+
+#file download
+RewriteRule ^upload/files/([0-9]+)_(.*)$ /assets/plugins/library/download.php?num=$1&name=$2 [L]
